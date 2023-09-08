@@ -30,3 +30,43 @@ li a:hover:not(.active) {
 .nav-item-2 {
   float: "right";
 }
+.navbar-brand {
+  color: #f7efe5;
+}
+p{
+  text-align: center;
+  padding-left: 2.5em;
+}
+
+
+.nav-item, .nav-item-2 {
+	
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 5px;
+	text-decoration:none;
+  margin: 3px;
+}
+.nav-link {
+color: #f7efe5;
+}
+.nav-item:hover, .nav-item-2:hover {
+	background:linear-gradient(to bottom, #fcebd5 5%, #f7efe5 100%);
+	background-color:#f8f7f6;
+  border-color: #fb9e25 ;
+  border-radius:6px;
+  font-weight: bold;
+}
+.nav-item:active {
+	position:relative;
+	top:1px;
+}
+
+.nav-link:hover {
+
+  color: #fb9e25 ;
+}
+

@@ -5,6 +5,7 @@ import { QuienessomosComponent } from './modules/pages/quienessomos/quienessomos
 import { IntegranteComponent } from './modules/pages/integrante/integrante.component';
 import { CatalogoComponent } from './modules/pages/catalogo/catalogo.component';
 import { RegisterformComponent } from './modules/register/registerform/registerform.component';
+import{ LoginComponent } from './modules/login/login/login.component';
 import { ErrorPageComponent } from './modules/share/error-page/error-page.component';
 
 const routes: Routes = [
@@ -36,6 +37,10 @@ const routes: Routes = [
     path: 'register',
     component: RegisterformComponent
   },
+ {
+  path:'login',
+  component: LoginComponent
+ },
   {
     path: '',
     redirectTo: 'dashboard',

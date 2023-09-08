@@ -1,0 +1,18 @@
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F8ED;
+}
+
+.logo{
+    height: 150px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.body{
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}

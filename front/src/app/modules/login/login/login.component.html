@@ -1,0 +1,20 @@
+
+<h2>Registro de Usuario</h2>
+<div class="wrapper">
+    <div class="body">
+      <img class="logo" src="/assets/images/logo-circular.png" alt="login">
+      <h1>Acceso</h1>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" [(ngModel)]="userData.username" required placeholder="Ingrese Usuario">
+        <label>Usuario</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control"  placeholder="Ingrese Password">
+        <label>Password</label>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Ingresar</button>
+      </div>
+      <p class="mb-3">No tienes cuenta? <a class="nav-link" routerLink="/register">Registrate aquí</a></p>
+    </div>
+</div>
