@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+//import { FormsModule } from '@angular/forms';
 
 import { RegistroService } from '../../../core/services/registro.service';
 

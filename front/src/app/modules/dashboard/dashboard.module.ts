@@ -12,6 +12,11 @@ import { FooterComponent } from '../share/footer/footer.component';
 import { CarouselComponent } from 'src/app/modules/dashboard/carousel/carousel.component';
 import { RegisteranswerComponent } from '../register/registeranswer/registeranswer.component';
 import { PagesModule } from '../pages/pages.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from '../login/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr/toastr/toastr.module';
+
 
 @NgModule({
   declarations: [
@@ -19,12 +24,16 @@ import { PagesModule } from '../pages/pages.module';
     RegisterbuttonComponent,
     RegisterformComponent,
     RegisteranswerComponent,
-    CarouselComponent
+    CarouselComponent,
+    LoginComponent,
+
   ],
   imports: [
     CommonModule,
     FormsModule,
     DashboardRoutingModule,
+    ReactiveFormsModule,
+    
     //PagesModule //Importo el módulo de pages para hacer uso por ejemplo de quienessomoscomponent
   ],
   exports: [

@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './modules/share/error-page/error-page.component';
@@ -10,13 +12,13 @@ import { EstadoUsuarioDirective } from './directivas/estado-usuario.directive';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PagesModule } from './modules/pages/pages.module';
 import { ShareModule } from './modules/share/shares.module';
-import { LoginComponent } from './modules/login/login/login.component';
+import { FormBuilder } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
-    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,10 @@ import { LoginComponent } from './modules/login/login/login.component';
     HttpClientModule,
     DashboardModule,
     PagesModule,
-    ShareModule
+    ShareModule,
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot(),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
